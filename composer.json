@@ -1,0 +1,21 @@
+{
+    "name": "johnson/yii2-webcam",
+    "description": "Capture and upload the image through system / Mobile web cam basic html5 native features.",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Arockia Johnson SR",
+            "email": "johnson@arojohnson.tk"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Johnson\\": ""
+        }
+    }
+}
