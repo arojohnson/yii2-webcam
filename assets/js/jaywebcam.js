@@ -1,4 +1,6 @@
-var jayWebCam = {canvasID: '', videoID: '', buttonID: ''};
+if (typeof jayWebCam === 'undefined') {
+    var jayWebCam = {canvasID: '', videoID: '', buttonID: '', width: '', height: ''};
+}
 // Put event listeners into place
 window.addEventListener("DOMContentLoaded", function () {
     // Grab elements, create settings, etc.
@@ -38,7 +40,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
     // Trigger photo take
     document.getElementById(jayWebCam.buttonID).addEventListener('click', function () {
-        context.drawImage(video, 0, 0, 640, 480);
+        context.drawImage(video, 0, 0, jayWebCam.width, jayWebCam.height);
 //        window.open(canvas.toDataURL('image/png'));
     });
 }, false);
