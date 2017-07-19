@@ -15,6 +15,8 @@ class JayWebcamAsset extends AssetBundle {
     ];
 
     public function init() {
+        //Initiate the asset bundle at the beginning of body
+        $this->jsOptions['position'] = View::POS_BEGIN;
         // Tell AssetBundle where the assets files are
         $this->sourcePath = __DIR__ . "/assets";
         parent::init();
