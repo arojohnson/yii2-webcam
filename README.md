@@ -28,17 +28,22 @@ Usage
 -----
 
 Once the extension is installed, simply use it in your code by  :
-
+~~~
 <?= \Johnson\JayWebcam::widget(); ?>
+~~~
 
 If you pass the ID of the input element then the base64 encoded data will be stored in the value attribute of the element after taking the snapshot.
 
 For Example:
 PHP Code
+~~~
 <?= \Johnson\JayWebcam::widget(['id' => $YourID]); ?>
+~~~
 
 HTML Code
+~~~
 <input type="hidden" id="<?= $YourID ?>">
+~~~
 
 After clicking the snapshot the value attribute will be assigned to the given element based on ID.
 
