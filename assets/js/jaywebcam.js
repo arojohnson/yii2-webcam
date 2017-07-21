@@ -1,7 +1,7 @@
 var jayWebCamApp = function (jayWebCam, uniqID) {
     var jay = {};
     if (typeof jayWebCam === 'undefined') {
-        var jayWebCam = {canvasID: '', videoID: '', buttonID: '', width: '', height: ''};
+        var jayWebCam = {canvasID: '', videoID: '', buttonID: '', width: '', height: '', eleID: ''};
     }
     jay.uniqID = uniqID;
     jay.init = function () {
@@ -43,6 +43,7 @@ var jayWebCamApp = function (jayWebCam, uniqID) {
         // Trigger photo take
         document.getElementById(jayWebCam.buttonID).addEventListener('click', function () {
             context.drawImage(video, 0, 0, jayWebCam.width, jayWebCam.height);
+            document.getElementById(jayWebCam.eleID).value = canvas.toDataURL('image/png');
 //        window.open(canvas.toDataURL('image/png'));
         });
 

@@ -10,7 +10,7 @@ use yii\helpers\Html;
  */
 class JayWebcam extends \yii\base\Widget {
 
-    public $width = 640, $height = 480, $cssClass = '';
+    public $width = 640, $height = 480, $cssClass = '', $id = '';
 
     public function init() {
         parent::init();
@@ -19,9 +19,9 @@ class JayWebcam extends \yii\base\Widget {
 
     public function run() {
         $id = md5(uniqid());
-
+        $eleID = ($this->id) ? $this->id : $id;
         return $this->render('webcam', ['canvasID' => $id . '_canvas', 'videoID' => $id . '_video', 'buttonID' => $id . '_button', 'width' => $this->width, 'height' => $this->height,
-                    'cssClass' => $this->cssClass,'uniqID' => $id]);
+                    'cssClass' => $this->cssClass, 'eleID' => $eleID]);
     }
 
 }

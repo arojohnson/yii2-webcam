@@ -18,5 +18,5 @@
     </div>
 </div>
 <script type="text/javascript">
-    jayWebCamApp({canvasID: '<?= $canvasID ?>', videoID: '<?= $videoID ?>', buttonID: '<?= $buttonID ?>', width: '<?= $width ?>', height: '<?= $height ?>'});
+    jayWebCamApp({canvasID: '<?= $canvasID ?>', videoID: '<?= $videoID ?>', buttonID: '<?= $buttonID ?>', width: '<?= $width ?>', height: '<?= $height ?>', eleID: '<?= $eleID ?>'});
 </script>
