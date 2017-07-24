@@ -3,6 +3,7 @@
 namespace Johnson;
 
 use yii\web\AssetBundle;
+use yii\web\View;
 
 class JayWebcamAsset extends AssetBundle {
 

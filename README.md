@@ -32,17 +32,21 @@ Once the extension is installed, simply use it in your code by  :
 <?= \Johnson\JayWebcam::widget(); ?>
 ~~~
 
-If you pass the ID of the input element then the base64 encoded data will be stored in the value attribute of the element after taking the snapshot.
+If you pass the ID of the input element then the base64 encoded image data will be stored in the "value" attribute of the element after taking the snapshot.
+
+If you want to show the thumbnail to the users then you can give the "imgID" property i.e the <img> tag id attribute value. Then the widget will assign the base64 encoded image into the element.
 
 For Example:
 PHP Code
 ~~~
-<?= \Johnson\JayWebcam::widget(['id' => $YourID]); ?>
+<?= \Johnson\JayWebcam::widget(['id' => $YourID,'imgID' => $imgID]); ?>
 ~~~
 
 HTML Code
 ~~~
 <input type="hidden" id="<?= $YourID ?>">
+
+<img src="" id="<? $imgID ?>" class="thumbnail">
 ~~~
 
 After clicking the snapshot the value attribute will be assigned to the given element based on ID.
