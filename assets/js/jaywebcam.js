@@ -1,3 +1,10 @@
+/**
+ * 
+ * @author Arockia Johnson SR<johnson@arojohnson.tk>
+ * @param Object jayWebCam -  {canvasID: '', videoID: '', buttonID: '', width: '', height: '', eleID: '', windowHtml: '', id: '', imgID: ''}
+ * @param String uniqID - 
+ * @returns {jayWebCamApp.jay} - Object
+ */
 var jayWebCamApp = function (jayWebCam, uniqID) {
     var jay = {};
     if (typeof jayWebCam === 'undefined') {

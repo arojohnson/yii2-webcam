@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * @author Arockia Johnson SR<johnson@arojohnson.tk>
+ * @desc - Asset management file for web cam capture
+ */
 namespace Johnson;
 
 use yii\web\AssetBundle;
