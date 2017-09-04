@@ -15,11 +15,15 @@ The preferred way to install this extension is through [composer](http://getcomp
 
 Either run
 
+~~~
 php composer.phar require --prefer-dist johnson/yii2-webcam "*"
+~~~
 
 or add
 
+~~~
 "johnson/yii2-webcam": "*"
+~~~
 
 to the require section of your `composer.json` file.
 
